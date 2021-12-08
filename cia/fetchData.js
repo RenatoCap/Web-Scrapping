@@ -13,7 +13,7 @@ fetch("../IAgency/cia.json")
     cards = ciaData.map(
       (x, idx) => `
     <div class="card">
-    <div class="card-header bg-dark" id="heading${idx}">
+    <div class="card-header bg-info" id="heading${idx}">
       <h2 class="mb-0">
         <button
           class="btn btn-outline-light"

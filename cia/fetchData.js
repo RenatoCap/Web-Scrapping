@@ -2,11 +2,13 @@ llet = $accordion = document.getElementById("accordion");
 
 let ciaData = null;
 
-fetch("./cia.json")
+// fetch("https://app.scrapinghub.com/api/v2/datasets/xJkGILqNkws/download?format=json")
+fetch("../IAgency/cia.json")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
+    // Work with JSON data here
     ciaData = data;
     cards = ciaData.map(
       (x, idx) => `
@@ -46,4 +48,5 @@ fetch("./cia.json")
     }
   })
   .catch((err) => {
+    // Do something for an error here
   });
